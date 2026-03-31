@@ -12,7 +12,9 @@ const app = express();
 const PORT = process.env.PORT2 || 8000;
 
 //MIDDLEWARE
-app.use(cors())
+app.use(cors({
+    origin: "https://oceancandles.vercel.app"
+}));
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
