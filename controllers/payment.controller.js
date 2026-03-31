@@ -42,7 +42,7 @@ export const createPreference = async (req, res) => {
                     failure: "https://oceancandles.vercel.app/cart",
                     pending: "https://oceancandles.vercel.app/cart"
                 },
-                notification_url: "https://oceancandles.vercel.app/checkout/webhook",
+                notification_url: "https://oceancandles-back-end.onrender.com/api/checkout/webhook",
 
                 external_reference: newOrder._id.toString()
             }
